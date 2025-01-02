@@ -14,11 +14,13 @@ import ventanas.VerdatosEmple;
 
 public class Principal extends JFrame implements ActionListener{
 
+	
 	private static final long serialVersionUID = 1L;
     private JButton b1,b2,b3,b4; 
       
 	public Principal() {
-	
+		System.out.println("Bienvenido");
+		System.out.println("Adios");
 	 setTitle("Ventana INICIAL.");
      setLayout(null);
 	 setSize(450, 250);
@@ -48,7 +50,7 @@ public class Principal extends JFrame implements ActionListener{
 	 setVisible(true);
    }
 
-	public void actionPerformed(ActionEvent e) //acción cuando pulsamos botones 
+	public void actionPerformed(ActionEvent e) //acciï¿½n cuando pulsamos botones 
 	    {  	  	
 	    	     if (e.getSource() == b1) 	
 	    	     {	   new VentanaEmple(this);
